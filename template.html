@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="{{ Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ Title }} | {{ SiteName }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <!-- Demo stran izmišljenega podjetja: ne sme se pojaviti v Googlu. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#c2386b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sl_SI" />
+    <meta property="og:site_name" content="{{ SiteName }}" />
+    <meta property="og:title" content="{{ Title }} | {{ SiteName }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="{{ PageUrl }}" />
+    <meta property="og:image" content="{{ site.url }}/images/deljenje.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="{{ SiteName }} – {{ site.tagline }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="{{ PageUrl }}" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link href="/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <p class="demo-banner"><strong>Demo stran.</strong> Podjetje Sladka Pika, cene in kontakti so izmišljeni. Izdelava: <a href="https://github.com/milinkovicluka">Luka Milinković</a>.</p>
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="/">{{ SiteName }}</a>
+        <a class="btn btn-order" href="/kontakt#narocilo">Naroči torto</a>
+      </div>
+      <nav class="site-nav" aria-label="Glavni meni">{{ Nav }}</nav>
+    </header>
+
+    <main>
+      <article>{{ Content }}</article>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">{{ SiteName }}</p>
+      <p>{{ site.tagline }} · {{ site.location }}</p>
+      <p class="footer-links">
+        <a href="tel:{{ site.phone }}">{{ site.phone_display }}</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+    </footer>
+
+    <nav class="mobile-bar" aria-label="Hitri kontakt">
+      <a href="tel:{{ site.phone }}">Pokliči</a>
+      <a href="https://wa.me/{{ site.whatsapp }}" rel="noopener">WhatsApp</a>
+      <a class="mobile-bar-order" href="/kontakt#narocilo">Naroči</a>
+    </nav>
+  </body>
+</html>

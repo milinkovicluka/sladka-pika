@@ -1,0 +1,19 @@
+{
+  "name": "Sladka Pika",
+  "lang": "sl",
+  "url": "https://milinkovicluka.github.io/sladka-pika",
+  "description": "Demo stran slaščičarne: domače torte po naročilu za rojstne dneve, poroke in vse priložnosti. Podjetje in podatki so izmišljeni.",
+  "tagline": "Domače torte, pečene z ljubeznijo",
+  "phone": "+38600000000",
+  "phone_display": "000 000 000",
+  "whatsapp": "38600000000",
+  "email": "info@example.com",
+  "location": "Ljubljana z okolico",
+  "nav": [
+    { "label": "Domov", "url": "/" },
+    { "label": "Torte", "url": "/torte" },
+    { "label": "Ponudba", "url": "/ponudba" },
+    { "label": "O nas", "url": "/o-nas" },
+    { "label": "Kontakt", "url": "/kontakt" }
+  ]
+}
